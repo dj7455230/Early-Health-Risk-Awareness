@@ -1170,7 +1170,7 @@ def show_dashboard():
                          margin=dict(l=20,r=60,t=30,b=40),hovermode="x unified")
         st.plotly_chart(fw,use_container_width=True)
         with st.expander("📋 RAW STREAM DATA"):
-            st.dataframe(wd.style.background_gradient(subset=["HR","SpO2"],cmap="plasma"),use_container_width=True,hide_index=True)
+            st.dataframe(wd,use_container_width=True,hide_index=True)
 
     # =========================================================================
     # TAB 4 — EXPLAINABLE AI
